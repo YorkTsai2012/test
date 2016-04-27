@@ -2,3 +2,7 @@ node_modules
 a.out
 *.o
 *.orig
+*.class
+*.pyc
+*.jpg
+*.png

@@ -1,0 +1,50 @@
+digraph G {
+    node [ fontname= "FangSong" size="20,20"] {
+        performance [label="性能" ]
+        functionality [label="功能" ]
+        framework_and_tool [label="框架和工具"]
+        data_structure_and_algorithm [label="数据结构与算法"]
+        database [label= "数据库"]
+        programming_language [label="程序语言"]
+        architecture_and_design [label="架构与设计"]
+        virtual_machine [label = "虚拟机"]
+        cache [label= "缓存"]
+        network [label = "网络"]
+        operating_system [label = "操作系统"]
+        compiling_theory [label = "编译原理"]
+        distributed_system [label = "分布式系统"]
+    }
+    performance -> data_structure_and_algorithm
+    performance ->  virtual_machine
+    performance -> operating_system
+    performance  ->  cache
+    performance -> network
+    performance -> distributed_system
+    performance -> database
+    performance -> architecture_and_design
+    performance -> framework_and_tool
+    performance -> programming_language
+    functionality -> data_structure_and_algorithm
+    functionality -> architecture_and_design
+    functionality -> network
+    functionality  ->  database
+    functionality  ->   framework_and_tool
+    functionality -> programming_language
+    framework_and_tool -> programming_language
+    framework_and_tool  -> data_structure_and_algorithm
+    programming_language ->   data_structure_and_algorithm
+    architecture_and_design -> distributed_system
+    architecture_and_design  -> framework_and_tool
+    distributed_system -> cache
+    distributed_system -> network
+    distributed_system  -> database
+    distributed_system -> data_structure_and_algorithm
+    virtual_machine ->   data_structure_and_algorithm
+    virtual_machine -> operating_system
+    virtual_machine  -> compiling_theory
+    operating_system -> data_structure_and_algorithm
+    compiling_theory  -> data_structure_and_algorithm
+    cache ->  data_structure_and_algorithm
+    network -> data_structure_and_algorithm
+    database -> data_structure_and_algorithm
+}

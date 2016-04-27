@@ -1,0 +1,17 @@
+digraph {
+
+    edge[fontname="SimSun",fontcolor=red];
+    node[fontname="SimSun",size="20,20"];
+
+    北京[shape=doublecircle];
+    湘潭[shape=plaintext]
+
+    //高速公路节点关系
+    北京->石家庄->郑州->武汉->长沙->广州[label=京港澳高速,color=red];
+    北京->天津->沈阳->长春->哈尔滨[label=京哈高速,color=lawngreen];
+    北京->呼和浩特->银川->兰州->西宁->拉萨[label=京藏高速,color=purple];
+    郑州->西安->兰州->乌鲁木齐[label=连霍高速,color=blue]
+    上海->杭州->南昌->湘潭->贵阳->昆明[label=沪昆高速,color=orange];
+    福州->南昌->武汉->西安->银川[label=福银高速,color=brown];
+    湘潭->长沙[style=dotted];
+}
