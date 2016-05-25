@@ -3,6 +3,29 @@ http://my.oschina.net/Tsybius2014/blog/617963?fromerr=ObQ2XFxa
 
 2. Graphviz中文乱码问题
 http://blog.chinaunix.net/uid-24118190-id-3852456.html
+Graphviz的使用及中文乱码问题
+http://blog.csdn.net/xiajian2010/article/details/23748557
 
 3. 官方文档
 http://www.graphviz.org/Documentation.php
+手册
+http://www.graphviz.org/pdf/dotguide.pdf
+
+4. 高阶教程
+Graphviz 工具教程
+http://zengrong.net/post/2379.htm
+
+离散数学专用绘图软件
+http://graphs.grevian.org/
+
+
+  我们可以用“n”,”ne”,”e”,””se”, “sw”,”w”,”nw”,
+
+分别表示冲哪一个方向连接这个节点（图形）-“north, northeast……”
+
+如：
+
+digraph G{
+    //b->c[tailport = se];
+    b->c:se;
+}
