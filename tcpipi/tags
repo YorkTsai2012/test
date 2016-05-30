@@ -1,0 +1,252 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+C	traceroute/traceroute.lsrr.c	942;"	d	file:
+C	traceroute/traceroute.pmtu.c	945;"	d	file:
+CC	icmpaddrmask/Makefile	/^CC	= gcc$/;"	m
+CC	icmptime/Makefile	/^CC	= gcc$/;"	m
+CC	sock/Makefile	/^CC	= gcc$/;"	m
+CC	traceroute/Makefile	/^CC	= gcc$/;"	m
+CFLAGS	icmpaddrmask/Makefile	/^CFLAGS	=$/;"	m
+CFLAGS	icmptime/Makefile	/^CFLAGS	=$/;"	m
+CFLAGS	sock/Makefile	/^CFLAGS	= -ansi -Wall -Dsun -D__STDC__=0$/;"	m
+CFLAGS	traceroute/Makefile	/^CFLAGS	=$/;"	m
+CONTROLLEN	sock/loop.c	32;"	d	file:
+DEFDATALEN	icmpaddrmask/icmpaddrmask.c	30;"	d	file:
+DEFDATALEN	icmptime/icmptime.c	28;"	d	file:
+DIR_MODE	sock/ourhdr.h	29;"	d
+FD_CLR	traceroute/traceroute.lsrr.c	250;"	d	file:
+FD_CLR	traceroute/traceroute.pmtu.c	250;"	d	file:
+FD_ISSET	traceroute/traceroute.lsrr.c	251;"	d	file:
+FD_ISSET	traceroute/traceroute.pmtu.c	251;"	d	file:
+FD_SET	traceroute/traceroute.lsrr.c	249;"	d	file:
+FD_SET	traceroute/traceroute.pmtu.c	249;"	d	file:
+FD_SETSIZE	traceroute/traceroute.lsrr.c	248;"	d	file:
+FD_SETSIZE	traceroute/traceroute.pmtu.c	248;"	d	file:
+FD_ZERO	traceroute/traceroute.lsrr.c	252;"	d	file:
+FD_ZERO	traceroute/traceroute.pmtu.c	252;"	d	file:
+FILE_MODE	sock/ourhdr.h	27;"	d
+Fprintf	traceroute/traceroute.lsrr.c	255;"	d	file:
+Fprintf	traceroute/traceroute.pmtu.c	255;"	d	file:
+INADDR_NONE	sock/sock.h	63;"	d
+INET_NTOA	sock/sock.h	71;"	d
+INET_NTOA	sock/sock.h	73;"	d
+LIBS	icmpaddrmask/Makefile	/^LIBS	= \/usr\/ucblib\/libucb.a -lsocket -lnsl$/;"	m
+LIBS	icmptime/Makefile	/^LIBS	= \/usr\/ucblib\/libucb.a -lsocket -lnsl$/;"	m
+LIBS	sock/Makefile	/^LIBS	= \/usr\/ucblib\/libucb.a -lsocket -lnsl$/;"	m
+LIBS	traceroute/Makefile	/^LIBS	= \/usr\/ucblib\/libucb.a -lsocket -lnsl$/;"	m
+MAXHOSTNAMELEN	traceroute/traceroute.lsrr.c	243;"	d	file:
+MAXHOSTNAMELEN	traceroute/traceroute.pmtu.c	243;"	d	file:
+MAXICMPLEN	icmpaddrmask/icmpaddrmask.c	32;"	d	file:
+MAXICMPLEN	icmptime/icmptime.c	30;"	d	file:
+MAXIPLEN	icmpaddrmask/icmpaddrmask.c	31;"	d	file:
+MAXIPLEN	icmptime/icmptime.c	29;"	d	file:
+MAXLINE	sock/ourhdr.h	25;"	d
+MAXPACKET	icmpaddrmask/icmpaddrmask.c	33;"	d	file:
+MAXPACKET	icmptime/icmptime.c	31;"	d	file:
+MAXPACKET	traceroute/traceroute.lsrr.c	241;"	d	file:
+MAXPACKET	traceroute/traceroute.pmtu.c	241;"	d	file:
+NFDBITS	traceroute/traceroute.lsrr.c	247;"	d	file:
+NFDBITS	traceroute/traceroute.pmtu.c	247;"	d	file:
+OBJS	icmpaddrmask/Makefile	/^OBJS = icmpaddrmask.o$/;"	m
+OBJS	icmptime/Makefile	/^OBJS = icmptime.o$/;"	m
+OBJS	sock/Makefile	/^OBJS = buffers.o cliopen.o crlf.o error.o loop.o main.o \\$/;"	m
+OBJS	traceroute/Makefile	/^OBJS = traceroute.lsrr.o traceroute.pmtu.o$/;"	m
+PROGS	icmpaddrmask/Makefile	/^PROGS =	icmpaddrmask$/;"	m
+PROGS	icmptime/Makefile	/^PROGS =	icmptime$/;"	m
+PROGS	sock/Makefile	/^PROGS =	sock$/;"	m
+PROGS	traceroute/Makefile	/^PROGS =	traceroute.lsrr traceroute.pmtu$/;"	m
+Printf	traceroute/traceroute.lsrr.c	257;"	d	file:
+Printf	traceroute/traceroute.pmtu.c	257;"	d	file:
+SIG_ERR	sock/ourhdr.h	36;"	d
+Sigfunc	sock/ourhdr.h	/^typedef	void	Sigfunc(int);	\/* for signal handlers *\/$/;"	t
+Sprintf	traceroute/traceroute.lsrr.c	256;"	d	file:
+Sprintf	traceroute/traceroute.pmtu.c	256;"	d	file:
+TELL_CHILD	sock/tellwait.c	/^TELL_CHILD(pid_t pid)$/;"	f
+TELL_PARENT	sock/tellwait.c	/^TELL_PARENT(pid_t pid)$/;"	f
+TELL_WAIT	sock/tellwait.c	/^TELL_WAIT()$/;"	f
+WAIT_CHILD	sock/tellwait.c	/^WAIT_CHILD(void)$/;"	f
+WAIT_PARENT	sock/tellwait.c	/^WAIT_PARENT(void)$/;"	f
+__ourhdr_h	sock/ourhdr.h	4;"	d
+bindport	sock/main.c	/^int		bindport;			\/* 0 or TCP or UDP port number to bind *\/$/;"	v
+broadcast	sock/main.c	/^int		broadcast;			\/* SO_BROADCAST *\/$/;"	v
+buffers	sock/buffers.c	/^buffers(int sockfd)$/;"	f
+cbreak	sock/main.c	/^int		cbreak;				\/* set terminal to cbreak mode *\/$/;"	v
+client	sock/main.c	/^int		client = 1;			\/* acting as client is the default *\/$/;"	v
+cliopen	sock/cliopen.c	/^cliopen(char *host, char *port)$/;"	f
+copyright	traceroute/traceroute.lsrr.c	/^char copyright[] =$/;"	v
+copyright	traceroute/traceroute.pmtu.c	/^char copyright[] =$/;"	v
+crlf	sock/main.c	/^int		crlf;				\/* convert newline to CR\/LF & vice versa *\/$/;"	v
+crlf_add	sock/crlf.c	/^crlf_add(char *dst, int dstsize, const char *src, int lenin)$/;"	f
+crlf_strip	sock/crlf.c	/^crlf_strip(char *dst, int dstsize, const char *src, int lenin)$/;"	f
+datalen	icmpaddrmask/icmpaddrmask.c	/^int		datalen = DEFDATALEN;$/;"	v
+datalen	icmptime/icmptime.c	/^int		datalen = DEFDATALEN;$/;"	v
+datalen	traceroute/traceroute.lsrr.c	/^int datalen;		\/* How much data *\/$/;"	v
+datalen	traceroute/traceroute.pmtu.c	/^int datalen;		\/* How much data *\/$/;"	v
+debug	sock/main.c	/^int		debug;				\/* SO_DEBUG *\/$/;"	v
+deltaT	traceroute/traceroute.lsrr.c	/^deltaT(tp)$/;"	f
+deltaT	traceroute/traceroute.pmtu.c	/^deltaT(tp)$/;"	f
+dofork	sock/main.c	/^int		dofork;				\/* concurrent server, do a fork() *\/$/;"	v
+err_doit	sock/error.c	/^err_doit(int errnoflag, const char *fmt, va_list ap)$/;"	f	file:
+err_dump	sock/error.c	/^err_dump(const char *fmt, ...)$/;"	f
+err_msg	sock/error.c	/^err_msg(const char *fmt, ...)$/;"	f
+err_quit	sock/error.c	/^err_quit(const char *fmt, ...)$/;"	f
+err_ret	sock/error.c	/^err_ret(const char *fmt, ...)$/;"	f
+err_sys	sock/error.c	/^err_sys(const char *fmt, ...)$/;"	f
+foreignip	sock/main.c	/^char	foreignip[32];		\/* foreign IP address, dotted-decimal string *\/$/;"	v
+foreignport	sock/main.c	/^int		foreignport;		\/* foreign port number *\/$/;"	v
+frag_err	traceroute/traceroute.lsrr.c	/^frag_err(from)$/;"	f
+frag_err	traceroute/traceroute.pmtu.c	/^frag_err(from)$/;"	f
+halfclose	sock/main.c	/^int		halfclose;			\/* TCP half close option *\/$/;"	v
+host	sock/main.c	/^char	*host;$/;"	v
+hostname	icmpaddrmask/icmpaddrmask.c	/^char		*hostname;$/;"	v
+hostname	icmptime/icmptime.c	/^char		*hostname;$/;"	v
+hostname	traceroute/traceroute.lsrr.c	/^char *hostname;$/;"	v
+hostname	traceroute/traceroute.pmtu.c	/^char *hostname;$/;"	v
+ident	traceroute/traceroute.lsrr.c	/^u_short ident;$/;"	v
+ident	traceroute/traceroute.pmtu.c	/^u_short ident;$/;"	v
+in_cksum	icmpaddrmask/icmpaddrmask.c	/^in_cksum(addr, len)$/;"	f
+in_cksum	icmptime/icmptime.c	/^in_cksum(addr, len)$/;"	f
+in_cksum	traceroute/traceroute.lsrr.c	/^in_cksum(addr, len)$/;"	f
+in_cksum	traceroute/traceroute.pmtu.c	/^in_cksum(addr, len)$/;"	f
+inetname	traceroute/traceroute.lsrr.c	/^inetname(in)$/;"	f
+inetname	traceroute/traceroute.pmtu.c	/^inetname(in)$/;"	f
+ip	traceroute/traceroute.lsrr.c	/^	struct ip ip;$/;"	m	struct:opacket	typeref:struct:opacket::ip	file:
+ip	traceroute/traceroute.pmtu.c	/^	struct ip ip;$/;"	m	struct:opacket	typeref:struct:opacket::ip	file:
+is_readlock	sock/ourhdr.h	98;"	d
+is_writelock	sock/ourhdr.h	100;"	d
+keepalive	sock/main.c	/^int		keepalive;			\/* SO_KEEPALIVE *\/$/;"	v
+linger	sock/main.c	/^long	linger = -1;		\/* 0 or positive turns on option *\/$/;"	v
+listenq	sock/main.c	/^int		listenq = 5;		\/* listen queue for TCP Server *\/$/;"	v
+loop	sock/loop.c	/^loop(int sockfd)$/;"	f
+main	icmpaddrmask/icmpaddrmask.c	/^main(argc, argv)$/;"	f
+main	icmptime/icmptime.c	/^main(argc, argv)$/;"	f
+main	sock/main.c	/^main(int argc, char *argv[])$/;"	f
+main	traceroute/traceroute.lsrr.c	/^main(argc, argv)$/;"	f
+main	traceroute/traceroute.pmtu.c	/^main(argc, argv)$/;"	f
+max	sock/ourhdr.h	40;"	d
+max_ttl	traceroute/traceroute.lsrr.c	/^int max_ttl = 30;$/;"	v
+max_ttl	traceroute/traceroute.pmtu.c	/^int max_ttl = 30;$/;"	v
+min	sock/ourhdr.h	39;"	d
+mtuptr	traceroute/traceroute.lsrr.c	/^int *mtuptr = &mtus[0];$/;"	v
+mtuptr	traceroute/traceroute.pmtu.c	/^int *mtuptr = &mtus[0];$/;"	v
+mtus	traceroute/traceroute.lsrr.c	/^int mtus[] = {$/;"	v
+mtus	traceroute/traceroute.pmtu.c	/^int mtus[] = {$/;"	v
+nbuf	sock/main.c	/^int		nbuf = 1024;		\/* number of buffers to write (sink mode) *\/$/;"	v
+newmask	sock/tellwait.c	/^static sigset_t			newmask, oldmask, zeromask;$/;"	v	file:
+nextmtu	traceroute/traceroute.lsrr.c	/^long nextmtu;	\/* from ICMP error, set by packet_ok(), might be 0 *\/$/;"	v
+nextmtu	traceroute/traceroute.pmtu.c	/^long nextmtu;	\/* from ICMP error, set by packet_ok(), might be 0 *\/$/;"	v
+nflag	traceroute/traceroute.lsrr.c	/^int nflag;			\/* print addresses numerically *\/$/;"	v
+nflag	traceroute/traceroute.pmtu.c	/^int nflag;			\/* print addresses numerically *\/$/;"	v
+nodelay	sock/main.c	/^int		nodelay;			\/* TCP_NODELAY (Nagle algorithm) *\/$/;"	v
+nprobes	traceroute/traceroute.lsrr.c	/^int nprobes = 3;$/;"	v
+nprobes	traceroute/traceroute.pmtu.c	/^int nprobes = 3;$/;"	v
+oldmask	sock/tellwait.c	/^static sigset_t			newmask, oldmask, zeromask;$/;"	v	file:
+opacket	traceroute/traceroute.lsrr.c	/^struct opacket {$/;"	s	file:
+opacket	traceroute/traceroute.pmtu.c	/^struct opacket {$/;"	s	file:
+options	traceroute/traceroute.lsrr.c	/^int options;			\/* socket options *\/$/;"	v
+options	traceroute/traceroute.pmtu.c	/^int options;			\/* socket options *\/$/;"	v
+optlist	traceroute/traceroute.lsrr.c	/^u_char optlist[MAX_IPOPTLEN];$/;"	v
+optlist	traceroute/traceroute.pmtu.c	/^u_char optlist[MAX_IPOPTLEN];$/;"	v
+outpack	icmpaddrmask/icmpaddrmask.c	/^u_char		outpack[MAXPACKET];$/;"	v
+outpack	icmptime/icmptime.c	/^u_char		outpack[MAXPACKET];$/;"	v
+outpacket	traceroute/traceroute.lsrr.c	/^struct opacket	*outpacket;	\/* last output (udp) packet *\/$/;"	v	typeref:struct:opacket
+outpacket	traceroute/traceroute.pmtu.c	/^struct opacket	*outpacket;	\/* last output (udp) packet *\/$/;"	v	typeref:struct:opacket
+packet	traceroute/traceroute.lsrr.c	/^u_char	packet[512];		\/* last inbound (icmp) packet *\/$/;"	v
+packet	traceroute/traceroute.pmtu.c	/^u_char	packet[512];		\/* last inbound (icmp) packet *\/$/;"	v
+packet_ok	traceroute/traceroute.lsrr.c	/^packet_ok(buf, cc, from, seq)$/;"	f
+packet_ok	traceroute/traceroute.pmtu.c	/^packet_ok(buf, cc, from, seq)$/;"	f
+pattern	sock/sourcesink.c	/^pattern(char *ptr, int len)$/;"	f
+pauseclose	sock/main.c	/^int		pauseclose;			\/* seconds to sleep after recv FIN, before close *\/$/;"	v
+pauseinit	sock/main.c	/^int		pauseinit;			\/* seconds to sleep before first read *\/$/;"	v
+pauselisten	sock/main.c	/^int		pauselisten;		\/* seconds to sleep after listen() *\/$/;"	v
+pauserw	sock/main.c	/^int		pauserw;			\/* seconds to sleep before each read or write *\/$/;"	v
+pname	sock/error.c	/^char	*pname = NULL;		\/* caller can set this from argv[0] *\/$/;"	v
+port	sock/main.c	/^char	*port;$/;"	v
+port	traceroute/traceroute.lsrr.c	/^u_short port = 32768+666;	\/* start udp dest port # for probe packets *\/$/;"	v
+port	traceroute/traceroute.pmtu.c	/^u_short port = 32768+666;	\/* start udp dest port # for probe packets *\/$/;"	v
+pr_type	traceroute/traceroute.lsrr.c	/^pr_type(t)$/;"	f
+pr_type	traceroute/traceroute.pmtu.c	/^pr_type(t)$/;"	f
+print	traceroute/traceroute.lsrr.c	/^print(buf, cc, from)$/;"	f
+print	traceroute/traceroute.pmtu.c	/^print(buf, cc, from)$/;"	f
+procpack	icmpaddrmask/icmpaddrmask.c	/^procpack(buf, cc, from)$/;"	f
+procpack	icmptime/icmptime.c	/^procpack(buf, cc, from)$/;"	f
+rbuf	sock/main.c	/^char   *rbuf;				\/* pointer that is malloc'ed *\/$/;"	v
+rcvbuflen	sock/main.c	/^int		rcvbuflen;			\/* size for SO_RCVBUF *\/$/;"	v
+read_lock	sock/ourhdr.h	84;"	d
+readlen	sock/main.c	/^int		readlen = 1024;		\/* default read length for socket *\/$/;"	v
+readw_lock	sock/ourhdr.h	86;"	d
+recvdstaddr	sock/main.c	/^int		recvdstaddr;		\/* IP_RECVDSTADDR option *\/$/;"	v
+response	icmpaddrmask/icmpaddrmask.c	/^int		response = 0;$/;"	v
+reuseaddr	sock/main.c	/^int		reuseaddr;			\/* SO_REUSEADDR *\/$/;"	v
+s	icmpaddrmask/icmpaddrmask.c	/^int		s;$/;"	v
+s	icmptime/icmptime.c	/^int		s;$/;"	v
+s	traceroute/traceroute.lsrr.c	/^int s;				\/* receive (icmp) socket file descriptor *\/$/;"	v
+s	traceroute/traceroute.pmtu.c	/^int s;				\/* receive (icmp) socket file descriptor *\/$/;"	v
+sccsid	traceroute/traceroute.lsrr.c	/^static char sccsid[] = "@(#)traceroute.c	5.4 (Berkeley) 5\/15\/90";$/;"	v	file:
+sccsid	traceroute/traceroute.pmtu.c	/^static char sccsid[] = "@(#)traceroute.c	5.4 (Berkeley) 5\/15\/90";$/;"	v	file:
+send	sock/ourhdr.h	22;"	d
+send_probe	traceroute/traceroute.lsrr.c	/^send_probe(seq, ttl)$/;"	f
+send_probe	traceroute/traceroute.pmtu.c	/^send_probe(seq, ttl)$/;"	f
+sender	icmpaddrmask/icmpaddrmask.c	/^sender()$/;"	f
+sender	icmptime/icmptime.c	/^sender()$/;"	f
+seq	traceroute/traceroute.lsrr.c	/^	u_char seq;		\/* sequence number of this packet *\/$/;"	m	struct:opacket	file:
+seq	traceroute/traceroute.pmtu.c	/^	u_char seq;		\/* sequence number of this packet *\/$/;"	m	struct:opacket	file:
+server	sock/main.c	/^int		server;				\/* to act as server requires -s option *\/$/;"	v
+servopen	sock/servopen.c	/^servopen(char *host, char *port)$/;"	f
+sig_alrm	icmpaddrmask/icmpaddrmask.c	/^sig_alrm(int signo)$/;"	f
+sig_alrm	icmptime/icmptime.c	/^sig_alrm(int signo)$/;"	f
+sig_catch	sock/loop.c	/^sig_catch(int signo)$/;"	f
+sig_usr	sock/tellwait.c	/^sig_usr(int signo)	\/* one signal handler for SIGUSR1 and SIGUSR2 *\/$/;"	f	file:
+sigflag	sock/tellwait.c	/^static volatile sig_atomic_t	sigflag;$/;"	v	file:
+sink	sock/sourcesink.c	/^sink(int sockfd)$/;"	f
+sndbuflen	sock/main.c	/^int		sndbuflen;			\/* size for SO_SNDBUF *\/$/;"	v
+sndsock	traceroute/traceroute.lsrr.c	/^int sndsock;			\/* send (udp) socket file descriptor *\/$/;"	v
+sndsock	traceroute/traceroute.pmtu.c	/^int sndsock;			\/* send (udp) socket file descriptor *\/$/;"	v
+sockopts	sock/sockopts.c	/^sockopts(int sockfd, int doall)$/;"	f
+source	traceroute/traceroute.lsrr.c	/^char *source = 0;$/;"	v
+source	traceroute/traceroute.pmtu.c	/^char *source = 0;$/;"	v
+sourcesink	sock/main.c	/^int		sourcesink;			\/* source\/sink mode *\/$/;"	v
+ssize_t	sock/ourhdr.h	/^typedef	int	ssize_t;$/;"	t
+strerror	sock/strerror.c	/^strerror(int error)$/;"	f
+tsdiff	icmptime/icmptime.c	/^long		tsdiff;		\/* adjustment must also be signed *\/$/;"	v
+tsorig	icmptime/icmptime.c	/^long		tsorig, tsrecv;	\/* originate & receive timestamps *\/$/;"	v
+tsrecv	icmptime/icmptime.c	/^long		tsorig, tsrecv;	\/* originate & receive timestamps *\/$/;"	v
+ttl	traceroute/traceroute.lsrr.c	/^	u_char ttl;		\/* ttl packet left with *\/$/;"	m	struct:opacket	file:
+ttl	traceroute/traceroute.pmtu.c	/^	u_char ttl;		\/* ttl packet left with *\/$/;"	m	struct:opacket	file:
+tv	traceroute/traceroute.lsrr.c	/^	struct timeval tv;	\/* time packet left *\/$/;"	m	struct:opacket	typeref:struct:opacket::timeval	file:
+tv	traceroute/traceroute.pmtu.c	/^	struct timeval tv;	\/* time packet left *\/$/;"	m	struct:opacket	typeref:struct:opacket::timeval	file:
+tvorig	icmptime/icmptime.c	/^struct timeval	tvorig, tvrecv;	\/* originate & receive timeval structs *\/$/;"	v	typeref:struct:timeval
+tvrecv	icmptime/icmptime.c	/^struct timeval	tvorig, tvrecv;	\/* originate & receive timeval structs *\/$/;"	v	typeref:struct:
+tvsub	traceroute/traceroute.lsrr.c	/^tvsub(out, in)$/;"	f
+tvsub	traceroute/traceroute.pmtu.c	/^tvsub(out, in)$/;"	f
+tz	traceroute/traceroute.lsrr.c	/^struct timezone tz;		\/* leftover *\/$/;"	v	typeref:struct:timezone
+tz	traceroute/traceroute.pmtu.c	/^struct timezone tz;		\/* leftover *\/$/;"	v	typeref:struct:timezone
+udp	sock/main.c	/^int		udp;				\/* use UDP instead of TCP *\/$/;"	v
+udp	traceroute/traceroute.lsrr.c	/^	struct udphdr udp;$/;"	m	struct:opacket	typeref:struct:opacket::udphdr	file:
+udp	traceroute/traceroute.pmtu.c	/^	struct udphdr udp;$/;"	m	struct:opacket	typeref:struct:opacket::udphdr	file:
+un_lock	sock/ourhdr.h	92;"	d
+urgwrite	sock/main.c	/^int		urgwrite;			\/* write urgent byte after this write *\/$/;"	v
+usage	sock/main.c	/^usage(const char *msg)$/;"	f	file:
+usage	traceroute/traceroute.lsrr.c	/^usage()$/;"	f
+usage	traceroute/traceroute.pmtu.c	/^usage()$/;"	f
+verbose	sock/main.c	/^int		verbose;$/;"	v
+verbose	traceroute/traceroute.lsrr.c	/^int verbose;$/;"	v
+verbose	traceroute/traceroute.pmtu.c	/^int verbose;$/;"	v
+wait_for_reply	traceroute/traceroute.lsrr.c	/^wait_for_reply(sock, from)$/;"	f
+wait_for_reply	traceroute/traceroute.pmtu.c	/^wait_for_reply(sock, from)$/;"	f
+waittime	traceroute/traceroute.lsrr.c	/^int waittime = 5;		\/* time to wait for response (in seconds) *\/$/;"	v
+waittime	traceroute/traceroute.pmtu.c	/^int waittime = 5;		\/* time to wait for response (in seconds) *\/$/;"	v
+wbuf	sock/main.c	/^char   *wbuf;				\/* pointer that is malloc'ed *\/$/;"	v
+whereto	icmpaddrmask/icmpaddrmask.c	/^struct sockaddr	whereto;	\/* who to send request to *\/$/;"	v	typeref:struct:sockaddr
+whereto	icmptime/icmptime.c	/^struct sockaddr	whereto;	\/* who to ping *\/$/;"	v	typeref:struct:sockaddr
+whereto	traceroute/traceroute.lsrr.c	/^struct sockaddr whereto;	\/* Who to try to reach *\/$/;"	v	typeref:struct:sockaddr
+whereto	traceroute/traceroute.pmtu.c	/^struct sockaddr whereto;	\/* Who to try to reach *\/$/;"	v	typeref:struct:sockaddr
+write_lock	sock/ourhdr.h	88;"	d
+writelen	sock/main.c	/^int		writelen = 1024;	\/* default write length for socket *\/$/;"	v
+writen	sock/writen.c	/^writen(int fd, const void *vptr, size_t n)$/;"	f
+writew_lock	sock/ourhdr.h	90;"	d
+zeromask	sock/tellwait.c	/^static sigset_t			newmask, oldmask, zeromask;$/;"	v	file:

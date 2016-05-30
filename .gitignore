@@ -1,4 +1,7 @@
 node_modules
+node_modules
+zookeeper
+nginx-1.8.1
 a.out
 *.o
 *.orig
@@ -6,3 +9,8 @@ a.out
 *.pyc
 *.jpg
 *.png
+*.tar
+*.tar.gz
+*.tar.Z
+*.pyc
+*.log
