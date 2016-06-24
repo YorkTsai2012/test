@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	//"net"
+	"net"
 	"net/http"
 	"net/url"
 	"strings"
@@ -10,7 +10,7 @@ import (
 
 func main() {
 	fmt.Printf("%q\n", strings.Split(".cn-bj.ufileos.com", ","))
-	var host string = "http://www.ufile.ucloud.cn:8888"
+	var url_str string = "http://www.ufile.ucloud.cn:8888"
 	/*
 			u, err := url.Parse(host)
 			if err != nil {
@@ -22,16 +22,27 @@ func main() {
 		fmt.Println(host)
 		fmt.Println(port)
 	*/
-
-	if strings.Index(host, "http://") == 0 {
+	/*
+		if host[:7] == "http://" {
+			host = host[7:len(host)]
+		}
+	*/
+	_url, _ := url.Parse(url_str)
+	host := _url.String()
+	fmt.Println("host", host)
+	if host[:7] == "http://" {
 		host = host[7:len(host)]
 	}
-	//fmt.Println("host", host)
+	fmt.Println("host", host)
+
+	host, port, _ := net.SplitHostPort(host)
+	fmt.Println("host", host)
+	fmt.Println("port", port)
 
 	key := "example.txt"
 	uri := url.URL{
 		Scheme: "http",
-		Host:   host,
+		Host:   host + ":" + port,
 		Path:   "/" + key,
 	}
 
@@ -39,5 +50,6 @@ func main() {
 	if err != nil {
 		fmt.Printf("err:%v\n", err)
 	}
+	putReq.Host = host
 	fmt.Printf("req:%v\n", putReq)
 }
