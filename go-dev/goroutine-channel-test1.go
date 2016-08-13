@@ -1,4 +1,6 @@
 
+//ref http://studygolang.com/articles/2792
+
 package main
 
 import "strconv"

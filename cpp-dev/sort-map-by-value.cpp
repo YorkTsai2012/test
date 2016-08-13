@@ -28,5 +28,11 @@ int main() {
         }
     }
     
+    //不需要两层循环
+    std::multimap<int64_t, std::string>::iterator iter = delta.begin();
+    for(; iter != delta.end(); iter++) {
+        printf("%d -> %s\n", iter->first, iter->second.c_str());
+    }
+    
     return 0;
 }

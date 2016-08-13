@@ -19,4 +19,6 @@ func main() {
     var p_data data
 	p_data.set(5)
 	p_data.show()
+    p_data.val = 4
+	p_data.show()
 }
