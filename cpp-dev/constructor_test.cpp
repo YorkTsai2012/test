@@ -85,7 +85,7 @@ int main(int argc, char *argv[]) {
 //	info_map[info->Name()] = *info;
 //	info_map[info->Name()] = *info;
     Info aInfo;
-	aInfo = info_map["haha"];
+	//aInfo = info_map["haha"];
 	info_map["haha"] = aInfo;
 
 
