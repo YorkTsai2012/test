@@ -1,25 +1,22 @@
-       #include <arpa/inet.h>
-       #include <stdio.h>
-       #include <stdlib.h>
+#include <arpa/inet.h>
+#include <stdio.h>
+#include <stdlib.h>
 
-       int
-       main(int argc, char *argv[])
-       {
-           struct in_addr addr;
+int main(int argc, char *argv[]) {
+    struct in_addr addr;
 
-           if (argc != 2) {
-               fprintf(stderr, "%s <dotted-address>\n", argv[0]);
-               exit(EXIT_FAILURE);
-           }
+    if (argc != 2) {
+        fprintf(stderr, "%s <dotted-address>\n", argv[0]);
+        exit(EXIT_FAILURE);
+    }
 
-           if (inet_aton(argv[1], &addr) == 0) {
-               perror("inet_aton");
-               exit(EXIT_FAILURE);
-           }
-          
-         
-           printf("%u\n", addr.s_addr); 
-           printf("%s\n", inet_ntoa(addr));
-           exit(EXIT_SUCCESS);
-       }
+    if (inet_aton(argv[1], &addr) == 0) {
+        perror("inet_aton");
+        exit(EXIT_FAILURE);
+    }
 
+
+    printf("%u\n", addr.s_addr);
+    printf("%s\n", inet_ntoa(addr));
+    exit(EXIT_SUCCESS);
+}
