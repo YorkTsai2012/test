@@ -1,5 +1,6 @@
 /*
 @compile: gcc -g -std=c99 linkedlist.c -o linked
+@OJ: https://leetcode.com/problems/merge-two-sorted-lists/
 */
 #include <stdio.h>
 #include <stdlib.h>
@@ -115,12 +116,20 @@ void drop_linked_list(Node* head) {
 
 int main(int argc, char* argv[]) {
 
-    for (int i = 0; i < argc; i++) {
-        printf("args: %d %s\n", i, argv[i]);
+    if (argc < 3) {
+        printf("usage: %s %s %s\n", argv[0], "linked-list A size", "linked-list B size");
+        exit(1);
     }
-    Node* pa = sorted_linked_list(7);
+
+    int sizeA = atoi(argv[1]);
+    int sizeB = (int)strtol(argv[2], (char **)NULL, 10);
+
+    for (int i = 0; i < argc; i++) {
+        printf("argv[%d]=%s\n", i, argv[i]);
+    }
+    Node* pa = sorted_linked_list(sizeA);
     print_linked_list(pa);
-    Node* pb = sorted_linked_list(4);
+    Node* pb = sorted_linked_list(sizeB);
     print_linked_list(pb);
     Node* p = merge(pa, pb);
     print_linked_list(p);
