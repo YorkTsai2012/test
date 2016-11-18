@@ -1,3 +1,6 @@
+/*
+@compile: gcc -g -std=c99 linkedlist.c -o linked
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -15,13 +18,22 @@ Node* merge(Node* pa, Node* pb) {
     if (!pa && !pb) return NULL;
     else if(pa && !pb) return pa;
     else if(!pa && pb) return pb;
-    Node* head = pb;
+
+    Node* head = NULL;
+    //当前比较的两个节点
+    Node* t1 = NULL;
+    Node* t2 = NULL;
+    //确定头部
     if (pa->val < pb->val) {
         head = pa;
-    }
+        t1 = pa->next;
+        t2 = pb;
+    } else {
+        head = pb;
+        t1 = pa;
+        t2 = pb->next;
+    }   
     Node* t = head; //记录前继节点
-    Node* t1 = pa->next;
-    Node* t2 = pb->next;
     while (t1 || t2) {
         if (t1 && t2) {
             if (t1->val < t2->val) {    
@@ -35,12 +47,10 @@ Node* merge(Node* pa, Node* pb) {
             }
         } else if (t1) {
             t->next = t1;
-            t1 = t1->next;
-            t = t->next;
+            break;
         } else {
             t->next = t2;
-            t2 = t2->next;
-            t = t->next;
+            break;
         }
     }
     return head;
