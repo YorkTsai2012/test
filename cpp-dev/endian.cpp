@@ -1,3 +1,7 @@
+
+#include <iostream>
+#include <fstream>
+
 #include <stdint.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -11,13 +15,35 @@ void printInt(int n) {
 }
 
 ssize_t writeToFile(const char* path, int n) {
-    int fd = open(path, O_WRONLY|O_CREAT);
+    int fd = open(path, O_WRONLY|O_TRUNC);
+    if (fd < 0 ) {
+        perror("open error");
+    }
     ssize_t ret = write(fd, (const void*)&n, sizeof(int));
     if (ret < 0) {
         perror("write error");
     }
     close(fd);
     return ret;
+}
+
+//直接写一个整数了 不是按照字节
+//((num=16#7f454c46)) && echo $num  2135247942
+void writeToFileStream(const char* path, int n) {
+    std::ofstream ofile;
+    ofile.open(path);
+    ofile << n;
+    ofile.close();
+}
+
+void readFromFileStream(const char* path) {
+    std::ifstream ifile;
+    ifile.open(path);
+    std::string str;
+    while (ifile >> str) {
+        std::cout << str << std::endl;
+    }
+    ifile.close();
 }
 
 //TODO  向文件流中写一个整型 
@@ -31,8 +57,12 @@ int main(int argc, char *argv[]) {
     printInt(b);
 
     //写到文件的 存储顺序 和打印顺序一致
-    writeToFile("7f454c46.save", a);
-    writeToFile("7f45.save", b);
+    writeToFile("7f454c46.file", a);
+    writeToFile("7f45.file", b);
+
+    //但是按照文件流来写就不是预期的字节了 似乎有编码
+    writeToFileStream("7f454c46.stream", a);
+    readFromFileStream("7f454c46.stream");
 
     return 0;
 }
