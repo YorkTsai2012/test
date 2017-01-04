@@ -1,0 +1,4 @@
+#IP
+IP=192.168.150.28
+PORT=27017
+NAME=mongodb
