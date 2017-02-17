@@ -1,10 +1,22 @@
 /*
  *   菱形继承内存储布局
  *   http://m.blog.csdn.net/article/details?id=49102373
+
+- **虚基类的虚表指针是不会被派生类所共享的，
+    若派生类中含有新的虚函数（改写的不算），
+    将会自己产生一个指向自己虚表的指针。**
+
+- 如果普通虚继承，虚表指针也被派生类继承；
+如果是虚继承，派生类有新的虚函数（不包括改写的），
+将会有自己的虚表指针。
+
+实际测试，只要是虚继承，基类有虚函数，派生类就有自己的虚表指针
+
  */
 
 #include <stdio.h>
 #include <iostream>
+#include <stdint.h>
 
 using namespace std;
 
@@ -64,7 +76,7 @@ public:
         cout << "Base::func2()" << endl;
     }
 private:
-    int b;
+    int64_t b;
 };
 
 //class Base1 :public virtual Base {
@@ -79,22 +91,28 @@ public:
               cout << "Base1::func2()" << endl;
        }
 private:
-        int b1;
+       int64_t b1;
 };
 
-//class Base2: public virtual Base
-class Base2: public Base {
+class Base2: public virtual Base {
+//class Base2: public Base {
 public:
+
+/*
         virtual void func1()
        {
               cout << "Base2::func1()" << endl;
        }
+*/
+
+/*
         virtual void Base2func2()
        {
               cout << "Base2::func2()" << endl;
        }
+*/
 private:
-        int b2;
+        int64_t b2;
 };
 
 typedef void (*FUNC)();
@@ -126,7 +144,7 @@ public:
               cout << "Derived::func3()" << endl;
        }
 private:
-        int d1;
+        int64_t d1;
 };
 
 int main(int argc, char* argv[]) {
