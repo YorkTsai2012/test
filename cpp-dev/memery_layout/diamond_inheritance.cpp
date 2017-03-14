@@ -79,6 +79,8 @@ private:
     int64_t b;
 };
 
+//Mac OS X中的GDB {<Base> = {_vptr$Base = 0x100002190 <vtable for Base1+16>, b = 140734799804768}, b1 = 0}
+//可以
 //class Base1 :public virtual Base {
 class Base1: public Base {
 public:
@@ -94,6 +96,7 @@ private:
        int64_t b1;
 };
 
+//{<Base> = {_vptr$Base = 0x100002200 <vtable for Base2+56>, b = 4294967296}, _vptr$Base2 = 0x1000021e0 <vtable for Base2+24>, b2 = 1}
 class Base2: public virtual Base {
 //class Base2: public Base {
 public:
