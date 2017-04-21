@@ -5,5 +5,6 @@ int main(int argc, char* arg[]) {
 
     uint64_t a = 18446744073709551615; //2^64 -1 
     printf("%lu\n", a);
+    printf("%llu\n", a);
     return 0;
 }
