@@ -15,7 +15,7 @@ void printInt(int n) {
 }
 
 ssize_t writeToFile(const char* path, int n) {
-    int fd = open(path, O_WRONLY|O_TRUNC);
+    int fd = open(path, O_CREAT|O_WRONLY|O_TRUNC);
     if (fd < 0 ) {
         perror("open error");
     }

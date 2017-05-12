@@ -1,12 +1,25 @@
 
 #include <stdio.h>
 
+#include <algorithm>
 #include <vector>
 
 
 int main(int argc, char* argv[]) {
 
     std::vector<int> cup;
+
+    std::vector<int>::const_iterator up_it = upper_bound(cup.begin(), cup.end(), 0);
+    if (up_it == cup.end()) {
+        printf("cup.upper_bound(0) is cup.end()\n");
+    }
+    --up_it;
+    if (up_it == cup.begin()) {
+        printf("--up_it is cup.begin()\n");
+    } else if (up_it == cup.end()) {
+        printf("--up_it is cup.end()\n");
+    }
+
     cup.push_back(1);
     cup.push_back(2);
     cup.push_back(3);

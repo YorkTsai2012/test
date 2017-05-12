@@ -12,8 +12,9 @@ mknod fifo.p p
 mknod("fifo.p1", S_IFIFO|0666)          = 0
 
 ## socket
-python -c "import socket as s; sock = s.socket(s.AF_UNIX); sock.bind('socket.s')"
+python -c "import socket as s; sock = s.socket(s.AF_UNIX); sock.bind('nod4.socket')"
 how to make socket file?
+http://stackoverflow.com/questions/6025755/how-to-create-special-files-of-type-socket
 http://stackoverflow.com/questions/6025755/how-to-create-special-files-of-type-socket
 
 ## symlink
