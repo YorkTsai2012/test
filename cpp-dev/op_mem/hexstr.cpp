@@ -5,6 +5,12 @@
 #include <sstream>
 #include <iomanip>
 
+std::string UInt64ToString(uint64_t number) {
+    std::ostringstream ss;
+    ss << std::setfill('0') << std::setw(2) << std::hex << number;
+    return ss.str();
+}
+
 int main(int argc, char* argv[]) {
 
     char text[20] = {0x01, 0x01, 0x00, 0x01,
@@ -23,6 +29,9 @@ int main(int argc, char* argv[]) {
     }
     
     printf("hexstr:%s\n", ss.str().c_str());
+
+    uint64_t number = 0x87654321;
+    printf("UInt64ToString(%lu)=%s\n", number, UInt64ToString(number).c_str());
 
     return 0;
 }
