@@ -1,5 +1,4 @@
-
-//g++ rpcb_test.c -I/usr/include/tirpc -ltirpc
+//g++ -g -o bind bind6_nfs_mnt.c -I/usr/include/tirpc -ltirpc
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,14 +10,10 @@
 #include <tirpc/rpc/rpcb_clnt.h>
 #include <tirpc/rpc/rpcb_prot.h>
 
-int main() {
+void CommonBind(rpcprog_t prog_num, rpcvers_t prog_ver, const char* port) {
 
-    rpcprog_t PROGNUM = (u_long)10005;
-    rpcvers_t PROGVER = (u_long)3;
     struct netconfig* nconf = NULL;
     struct netbuf nbuf;
-    //struct t_bind bind_addr;
-
     struct addrinfo* ai_tcp = NULL;
     struct addrinfo hints;
 
@@ -28,7 +23,7 @@ int main() {
     hints.ai_socktype = SOCK_STREAM;
     hints.ai_protocol = IPPROTO_TCP;
 
-    int ret = getaddrinfo("::", "38465", &hints, &ai_tcp);
+    int ret = getaddrinfo("::", port, &hints, &ai_tcp);
     if (ret != 0) {
         fprintf(stderr, "getaddrinfo fail|ret:%d", ret);
         exit(1);
@@ -42,24 +37,26 @@ int main() {
     }
     printf("\n");
 
-    /* Get netconfig structure corresponding to tcp transport */
     if ((nconf = getnetconfigent("tcp6")) == (struct netconfig *) NULL) {
         fprintf(stderr, "getnetconfigent failed");
         exit(1);
     }
-    /*
-     * Code to open and bind file descriptor to bind_addr address
-     */
-    if(rpcb_set(PROGNUM, PROGVER, nconf, &nbuf) == FALSE) {
+
+    if(rpcb_set(prog_num, prog_ver, nconf, &nbuf) == FALSE) {
         fprintf(stderr, "rpcb_set() failed");
         exit(1);
     }
-    svc_run();
     if (nconf) {
         freenetconfigent(nconf);
     }
     if (ai_tcp) {
         freeaddrinfo(ai_tcp);
     }
+}
+
+int main() {
+
+    CommonBind(100005, 3, "38465");
+    CommonBind(100003, 3, "2049");
     return 0;
 }
