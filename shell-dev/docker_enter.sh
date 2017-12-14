@@ -8,5 +8,8 @@ if [ $# -ne 0 ]then    notallowed="^bash|^sh|^rbash|^/bin/bash|^/usr/bin/sh|^
         Notes:
             Do not pass any arguments if you simply want an interactive 'shell'
             Do not prefix an in-line command with any kind of shell invocationEOF        exit 1    fifi
-if [ $# -eq 0 ]then    # provides prompt in the container    docker exec -it object-main bash -l -c "export TERM=xterm && bash"else    # runs the command passed in the container context    docker exec object-main bash -l -c "export TERM=xterm && $*"fi
+if [ $# -eq 0 ]then    # provides prompt in the container    
+docker exec -it object-main bash -l -c "export TERM=xterm && bash"
+else    # runs the command passed in the container context    
+docker exec object-main bash -l -c "export TERM=xterm && $*"fi
 exit 0
