@@ -12,7 +12,7 @@ function hello()
 
 flock -n 200 || {
 
- echo "there is another one trying to stop dbfs"
+ echo "there is another one"
 
  exit 1
 
