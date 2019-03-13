@@ -1,0 +1,2 @@
+# clean old logs every day
+0 */3 * * * root cd /path/to/xxx && ls -t1 | awk '{if(NR>11){print $1}}' | xargs -n 1 -I file /bin/rm -f file
